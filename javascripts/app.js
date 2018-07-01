@@ -1,8 +1,7 @@
 
 var NebPay = require("nebpay");
 var nebPay = new NebPay();
-// var dappAddress="n1vDPkwDN6z7cS9aCjYFbZvuUhAdTAVftiV"; //testnet
-var dappAddress="n1kGbBoNqWRVHaCgD6GuAs6r49Bm8j2JJgm";
+var dappAddress="n1mwVTi9jjpFFfAT9b3V8PzB6yNYdEw8ZoB";
 var account;
 
 window.App = {

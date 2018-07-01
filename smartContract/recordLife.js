@@ -19,7 +19,7 @@ Status.prototype = {
     }
 };
 
-var MemoryTime = function() {
+var RecordLife = function() {
     LocalContractStorage.defineProperties(this, {
         builder: null,
         statusIndex: null,
@@ -38,7 +38,7 @@ var MemoryTime = function() {
     });
 }
 
-MemoryTime.prototype = {
+RecordLife.prototype = {
     init: function() {
         this.builder = Blockchain.transaction.from;
         this.statusIndex = 0;
@@ -116,7 +116,10 @@ MemoryTime.prototype = {
         this.dateToStatusIds.set(date, ids);
 
         this.indexToStatus.set(this.statusIndex, status);
+
     }
+
+
 }
 
-module.exports = MemoryTime;
+module.exports = RecordLife;
