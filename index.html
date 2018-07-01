@@ -3,118 +3,127 @@
 <html>
 
 <head>
-  <title>Record Life - 生活记录</title>
- 
-  <!-- <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"> -->
-  <link rel="stylesheet" href="./stylesheets/spectre.min.css">
-  <link rel="stylesheet" href="./stylesheets/spectre-exp.min.css">
-  <link rel="stylesheet" href="./stylesheets/spectre-icons.min.css">
-  <link rel="stylesheet" href="./stylesheets/app.css">
-  <script src="./javascripts/jquery-3.3.1.min.js"></script>
-  
+    <title>Record Life - 生活记录</title>
 
-  <script src="./javascripts/nebPay.js"></script>
-  <script src="./javascripts/app.js"></script>
+    <link rel="stylesheet" href="./stylesheets/spectre.min.css">
+    <link rel="stylesheet" href="./stylesheets/spectre-exp.min.css">
+    <link rel="stylesheet" href="./stylesheets/spectre-icons.min.css">
+    <link rel="stylesheet" href="./stylesheets/app.css">
+
+    <script src="./javascripts/jquery-3.3.1.min.js"></script>
+    <script src="./javascripts/nebPay.js"></script>
+    <script src="./javascripts/app.js"></script>
 </head>
 
 <body>
-  <div class="noExtension hide" id="noExtension">
+<div class="noExtension hide" id="noExtension">
     <div class="card">
-      <div class="card-body mt-3 mb-3"> <h1>FBI　WARNING </h1><br>
-        Please use Chrome and install <u><a target="_blank" href="https://github.com/ChengOrangeJu/WebExtensionWallet">WebExtensionWallet</a></u>  to use Record Life!<br><br>
-       <div>注意：请使用谷歌浏览器、并安装钱包插件 <u><a target="_blank" href="https://github.com/ChengOrangeJu/WebExtensionWallet">WebExtensionWallet</a></u> 来玩 铭记这一刻！</div>
-      </div>
+        <div class="card-body mt-3 mb-3"><h1>FBI　WARNING </h1><br>
+            Please use Chrome and install <u><a target="_blank"
+                                                href="https://github.com/ChengOrangeJu/WebExtensionWallet">WebExtensionWallet</a></u>
+            to use Record Life!<br><br>
+            <div>注意：请使用谷歌浏览器、并安装钱包插件<u><a target="_blank" href="https://github.com/ChengOrangeJu/WebExtensionWallet">WebExtensionWallet</a></u>
+                来使用记录生活！
+            </div>
+        </div>
     </div>
- </div>
- <div class="mainPage">
-
- <div class="title h1">Record Life<div class="loading loading-lg float-right hide"></div></div>
-     <div class="title h3">生活需要一些仪式感<div class="loading loading-lg float-right hide"></div></div>
-
-
- <header class="navbar mt-3">
-    <section class="navbar-section">
-      <a href="#" class="navbar-brand mr-2">时间线</a>
-      <a href="javascript:void(0)" class="btn btn-link" onclick="App.ruleTip()">说明</a>
-      <!--<a class="btn btn-link" target="_blank" href="https://github.com/kdupx/memoryTime">GitHub</a>-->
-    </section>
-    <section class="navbar-section">
-        <button class="btn btn-primary" onclick="App.addStatus()"> 开始创建 </button>
-        
-      </section>
-  </header>
-
-  <div class="container mt-3">
-      <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-left">
-              <a class="timeline-icon" href="#"></a>
-            </div>
-            <div class="timeline-content">
-              <!-- tiles structure -->
-              很久以前
-              <div class="card p-1 mt-2">
-                <div >生活记录正在被创造...</div>
-                <div class="item-from mt-2 text-right">from：n1KDRTo7ryKezHBuXhWcRABnCTQucZdUcXJ</div>
-              </div>
-            </div>
-          </div>
-        <div class="timeline-items">
-
-
-  </div>
 </div>
-    <div class="footer card-body text-center mt-3">
-      <a href="">
-        <img src="./image/logo-b.png" width="150" height="50">
-      </a>
-      <div>基于星云链上的时间线社交应用</div>
+
+<div class="mainPage">
+    <div class="title h1">Record Life
+        <div class="loading loading-lg float-right hide"></div>
+    </div>
+    <div class="title h3">生活需要一些仪式感
+        <div class="loading loading-lg float-right hide"></div>
     </div>
 
-    <div class="modal" id="modal-msg">
-        <a href="#" class="modal-overlay" aria-label="Close"></a>
-        <div class="modal-container">
-          <div class="modal-header">
-            <a href="javascript:void(0)" class="btn btn-clear float-right" aria-label="Close" onclick="App.msgclose()"></a>
-            <div class="modal-title h5">温馨提示</div>
-          </div>
-          <div class="modal-body">
-            <div class="content">
-              <!-- content here -->
-              <div class="modal-msg-content"></div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button class="btn btn-primary" onclick="App.msgclose()">确定</button>
-            <button class="btn" onclick="App.msgclose()">关闭</button>
-          </div>
-        </div>
-      </div>
+    <header class="navbar mt-3">
+        <section class="navbar-section">
+            <a href="#" class="navbar-brand mr-2">时间线</a>
+            <a href="javascript:void(0)" class="btn btn-link" onclick="App.ruleTip()">说明</a>
+            <a class="btn btn-link" target="_blank" href="https://github.com/recordlife/recordlife.github.io">GitHub</a>
+        </section>
+        <section class="navbar-section">
+            <button class="btn btn-primary" onclick="App.addStatus()"> 开始创建</button>
+        </section>
+    </header>
 
-      <div class="modal" id="modal-record">
-          <a href="#" class="modal-overlay" aria-label="Close"></a>
-          <div class="modal-container">
-            <div class="modal-header">
-              <a href="javascript:void(0)" class="btn btn-clear float-right" aria-label="Close" onclick="App.msgclose()"></a>
-              <div class="modal-title h5">新的事件</div>
-            </div>
-            <div class="modal-body">
-              <div class="content">
-                <!-- content here -->
-                <div class="modal-deposit-content">
-                  <textarea class="form-input" placeholder="输入今天值得纪念的时刻" type="text" id="status-input"></textarea>
+    <div class="container mt-3">
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-left">
+                    <a class="timeline-icon" href="#"></a>
                 </div>
-              </div>
+                <div class="timeline-content">
+                    <!-- tiles structure -->
+                    很久以前
+                    <div class="card p-1 mt-2">
+                        <div>生活记录正在被创造...</div>
+                        <div class="item-from mt-2 text-right">from：n1KDRTo7ryKezHBuXhWcRABnCTQucZdUcXJ</div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-footer">
-              <button class="btn btn-primary" onclick="App.postStatus()">确定</button>
-              <button class="btn" onclick="App.msgclose()">关闭</button>
+            <div class="timeline-items">
+
             </div>
-          </div>
         </div>
-    
+
+        <div class="footer card-body text-center mt-3">
+            <a href="">
+                <img src="./image/logo-b.png" width="150" height="50">
+            </a>
+            <div>基于星云链上的时间线社交应用</div>
+        </div>
+
+        <div class="modal" id="modal-msg">
+            <a href="#" class="modal-overlay" aria-label="Close"></a>
+            <div class="modal-container">
+                <div class="modal-header">
+                    <a href="javascript:void(0)" class="btn btn-clear float-right" aria-label="Close"
+                       onclick="App.msgclose()"></a>
+                    <div class="modal-title h5">温馨提示</div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="content">
+                        <!-- content here -->
+                        <div class="modal-msg-content"></div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary" onclick="App.msgclose()">确定</button>
+                    <button class="btn" onclick="App.msgclose()">关闭</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-record">
+            <a href="#" class="modal-overlay" aria-label="Close"></a>
+            <div class="modal-container">
+                <div class="modal-header">
+                    <a href="javascript:void(0)" class="btn btn-clear float-right" aria-label="Close"
+                       onclick="App.msgclose()"></a>
+                    <div class="modal-title h5">新的事件</div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="content">
+                        <!-- content here -->
+                        <div class="modal-deposit-content">
+                            <textarea class="form-input" placeholder="输入今天值得纪念的时刻" type="text"
+                                      id="status-input"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary" onclick="App.postStatus()">确定</button>
+                    <button class="btn" onclick="App.msgclose()">关闭</button>
+                </div>
+            </div>
+        </div>
+
 </body>
 
 </html>
