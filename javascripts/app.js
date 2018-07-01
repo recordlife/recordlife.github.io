@@ -122,7 +122,7 @@ window.App = {
     statuses.forEach(s => {
       html+='<div class="card p-1 mt-3"><div >'+s.text+'</div><div class="item-from mt-2 text-right">from：'+s.from+'</div></div>'
     });
-    return html+='<div class="mt-3">好的事情正在发生...</div></div></div>';
+    return html;
   },
 
 };
