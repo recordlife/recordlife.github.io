@@ -1,6 +1,7 @@
 var NebPay = require("nebpay");
 var nebPay = new NebPay();
-var dappAddress = "n1mwVTi9jjpFFfAT9b3V8PzB6yNYdEw8ZoB";
+// var dappAddress = "n1mwVTi9jjpFFfAT9b3V8PzB6yNYdEw8ZoB"; 原合约地址
+var dappAddress = "n1sy2JeMfUr7MGTZCKyhKeZy4GDZ3bF6cKb";
 var account;
 
 window.App = {
@@ -19,9 +20,11 @@ window.App = {
     },
 
     ruleTip: function () {
-        var html = "<div class='card-body'>这是一个基于星云链的生活记录应用，每个人都可以创建值得记录的任何事情；</div>"
-        html += "<div class='mt-3'>而你只需要付出很少的gas，就能将这件事情永久记录在星云链上；</div>"
-        html += "<div class='mt-3'>美好的事情正在发生，由你书写！</div>"
+        var html = "<div class='card-body'>Record Life，永久记录生活中的美好时刻！</div>"
+
+        // var html = "<div class='card-body'>这是一个基于星云链的生活记录应用，每个人都可以记录美好事情；</div>"
+        // html += "<div class='mt-3'>而你只需要付出很少的gas，就能将这件事情永久记录在星云链上；</div>"
+        // html += "<div class='mt-3'>美好的事情正在发生，由你书写！</div>"
         this.msgTip(html);
     },
 
